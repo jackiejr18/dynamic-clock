@@ -25,5 +25,9 @@ setInterval(() => {
 	min = min < 10 ? "0" + min : min; //similar for min
 	sec = sec < 10 ? "0" + sec : sec; //same for sec
 
+	document.querySelector(".hour_num").innerText = hour;
+	document.querySelector(".min_num").innerText = min;
+	document.querySelector(".sec_num").innerText = sec;
+	document.querySelector(".am_pm").innerText = d;
 
-})
+}, 1000)
