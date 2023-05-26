@@ -15,5 +15,11 @@ setInterval(() => {
 	min = date.getMinutes(), // store minute from date object
 	sec = date.getSeconds(); // store seconds from date object 
 
+	// declares the d variable
+	let d; 
+	d = hour < 12 ? "AM" : "PM"; // if hour is less than 12 value of D is set to AM, otherwise PM
+	hour = hour > 12 ? hour - 12 : hour; // if hour is greater than 12, subtract 12 from hour for format
+	hour = hour == 0 ? hour = 12 : hour; // if hour value is 0 then it is midnight, which is 12
+
 
 })
