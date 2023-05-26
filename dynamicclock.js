@@ -21,5 +21,9 @@ setInterval(() => {
 	hour = hour > 12 ? hour - 12 : hour; // if hour is greater than 12, subtract 12 from hour for format
 	hour = hour == 0 ? hour = 12 : hour; // if hour value is 0 then it is midnight, which is 12
 
+	hour = hour < 10 ? "0" + hour : hour; // if hour is less than 10, prepend "0" as string concatenation, if greeater leave same
+	min = min < 10 ? "0" + min : min; //similar for min
+	sec = sec < 10 ? "0" + sec : sec; //same for sec
+
 
 })
